@@ -14,7 +14,7 @@ const LoginScreen = (props) => {
 
     const { navigation } = props;
 
-    const userEmail = "sebastian.lara@uach.cl"
+    const userEmail = "sebastian.lara01@uach.cl"
     const userPassword = "Info208$$"
 
     const goToHome = () => {
