@@ -1,21 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+
+// Importamos las librerias para navegar entre pantallas
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+//Importan las pantallas para navegar
+import LoginScreen from '../botTelegram/screens/LoginScreen.js'; 
+import HomeScreen from '../botTelegram/screens/HomeScreen.js';
+import CommandScreen from '../botTelegram/screens/CommandScreen.js';
+
+//Creamos la instacia de navegación
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>BOT TELEGRAM</Text>
-      <Text>INFO208</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Command" component={CommandScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
