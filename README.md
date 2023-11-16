@@ -14,7 +14,7 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
 1. Clona el repositorio en tu máquina local:
 
     ```bash
-    git clone https://github.com/tu-usuario/tu-repositorio.git
+    git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/SLaraB/TallerReactNative_INFO208.git)
     ```
 
     O descarga el código fuente como archivo ZIP y extráelo.
